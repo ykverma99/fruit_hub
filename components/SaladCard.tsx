@@ -9,6 +9,7 @@ interface cardType {
   imageCss?: string;
   titleCss?: string;
   containerCss?: string;
+  iconCss?: string;
 }
 
 const SaladCard = ({
@@ -18,15 +19,16 @@ const SaladCard = ({
   imageCss,
   titleCss,
   containerCss,
+  iconCss,
 }: cardType) => {
   return (
     <View
-      className={`bg-white relative shadow-lg pr-3 pl-1 flex items-center gap-2 shadow-black/25 w-[150px] py-5 rounded-xl ${containerCss}`}
+      className={`bg-white relative shadow-lg pr-3 pl-1 flex items-center gap-2 shadow-black/25 w-[150px]  py-5 rounded-xl ${containerCss}`}
     >
       <Image
         source={icons.Heart}
         resizeMode="contain"
-        className="absolute right-3 top-1 h-4 w-4"
+        className={`absolute right-3 top-1 h-4 w-4 ${iconCss}`}
       />
       <View>
         <Image
@@ -35,7 +37,7 @@ const SaladCard = ({
           className={`h-20 w-20 ${imageCss}`}
         />
       </View>
-      <Text className={`${titleCss} text-center w-full`}>{title}</Text>
+      <Text className={`${titleCss} text-center text-sm w-full`}>{title}</Text>
       <View className="flex-row items-center  w-full justify-between px-2.5">
         <Text className="self-start text-primary-color">
           <Text className="font-semibold">{"\u20B9"}</Text> {price}
