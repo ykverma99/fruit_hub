@@ -1,4 +1,11 @@
-import { View, Text, Image, TouchableOpacity, TextInput } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+  TextInput,
+  Alert,
+} from "react-native";
 import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import icons from "@/constants/icons";
@@ -10,6 +17,10 @@ const signup = () => {
   const [userName, setuserName] = useState("");
   const { login, user } = useUser();
   const signUser = () => {
+    if (userName == "" || userName.length < 4) {
+      Alert.alert("Error", "Please fill correct name");
+      return;
+    }
     login(userName);
     router.replace("/screens/home");
   };
