@@ -12,13 +12,16 @@ import Filter from "../assets/images/filter.png";
 import BerrymangoCombo from "../assets/images/Glowing-Berry-Fruit.png";
 import HoneyLimeCombo from "../assets/images/Honey-Lime-Peach-Fruit-.png";
 import QuinoaFruitSalad from "../assets/images/breakfast-quinoa-and-red-fruit.png";
+import QuinoaFruitSalad_2 from "../assets/images/breakfast-quinoa-and-red-fruit-2.png";
 import TropicalFruitSalad from "../assets/images/Best-Ever-Tropical-Fruit.png";
 import KiwiVerrySalad from "../assets/images/BerryWorld-Kiwiberry-Fruit.png";
-// import  from "../assets/images/";
+import BackArrow from "../assets/images/back-arrow.png";
 // import  from "../assets/images/";
 // import  from "../assets/images/";
 
 export default {
+  QuinoaFruitSalad_2,
+  BackArrow,
   Cart,
   Heart,
   KiwiVerrySalad,
