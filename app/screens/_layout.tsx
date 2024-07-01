@@ -24,6 +24,16 @@ const ScreenLayout = () => {
             headerTitle: () => <CustomHeader />,
           }}
         />
+        <Stack.Screen
+          name="basket"
+          options={{
+            headerStyle: { backgroundColor: "#FFA451" },
+            headerBackVisible: false,
+            headerTitle: () => (
+              <CustomHeader title="My Basket" styleContainer="h-28" />
+            ),
+          }}
+        />
       </Stack>
       <StatusBar style="light" backgroundColor="#FFA451" />
     </>
