@@ -7,7 +7,6 @@ interface userTypes {
 }
 
 let users: userTypes[] = [];
-console.log(users);
 
 interface contextType {
   user: userTypes | null;
@@ -26,7 +25,6 @@ export const UserProvider: React.FC<{ children: React.ReactNode }> = ({
 
   const login = (name: string) => {
     const isUser = users.filter((elm) => elm.username === name);
-    console.log(isUser, "checl");
     if (isUser.length) {
       setisLoggedIn(true);
     } else {

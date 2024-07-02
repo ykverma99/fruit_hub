@@ -45,18 +45,9 @@ const basket = () => {
         </View>
       </View>
       {bottomSheets === "address" ? (
-        <AddressBottomSheet
-          onPress={() => {
-            setbottomSheets("none");
-          }}
-          handlePress={() => setbottomSheets("card")}
-        />
+        <AddressBottomSheet setbottomSheet={setbottomSheets} />
       ) : bottomSheets === "card" ? (
-        <CardBottomSheet
-          onPress={() => {
-            setbottomSheets("none");
-          }}
-        />
+        <CardBottomSheet setbottomSheet={setbottomSheets} />
       ) : null}
     </>
   );

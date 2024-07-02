@@ -16,11 +16,12 @@ import QuinoaFruitSalad_2 from "../assets/images/breakfast-quinoa-and-red-fruit-
 import TropicalFruitSalad from "../assets/images/Best-Ever-Tropical-Fruit.png";
 import KiwiVerrySalad from "../assets/images/BerryWorld-Kiwiberry-Fruit.png";
 import BackArrow from "../assets/images/back-arrow.png";
-// import  from "../assets/images/";
+import Done from "../assets/images/Done.png";
 // import  from "../assets/images/";
 
 export default {
   QuinoaFruitSalad_2,
+  Done,
   BackArrow,
   Cart,
   Heart,

@@ -34,6 +34,7 @@ const ScreenLayout = () => {
             ),
           }}
         />
+        <Stack.Screen name="order" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="light" backgroundColor="#FFA451" />
     </>

@@ -14,8 +14,10 @@ const CustomHeader = ({
 
   return (
     <View
-      className={`h-16 bg-primary-color justify-center px-2 ${
-        title ? "flex-row items-center gap-4" : ""
+      className={`bg-primary-color justify-center px-2 ${
+        title
+          ? "flex-row items-center gap-4"
+          : "flex-row pt-4 h-16 justify-center items-start "
       } ${styleContainer}`}
     >
       <View>

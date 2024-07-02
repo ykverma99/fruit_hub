@@ -2,6 +2,7 @@ import { View, Text, Image, StatusBar, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 import icons from "@/constants/icons";
 import CustomButton from "@/components/CustomButton";
+import { router } from "expo-router";
 
 const product = () => {
   const [quantity, setquantity] = useState(1);
@@ -76,6 +77,7 @@ const product = () => {
               />
             </TouchableOpacity>
             <CustomButton
+              handlePress={() => router.push("/screens/basket")}
               textStyles="font-medium"
               containerStyles="w-[80%]"
               title="Add to basket"
